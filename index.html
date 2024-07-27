@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortune Teller</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="main-header">
+        <div class="layers">
+          <div class="layer__header">
+            <div class="layers__caption">Each of us has wanted to know our fate at least once...</div>
+            <div class="layers__title">Deep into the dark forest... there lie the answers you seek...</div>
+          </div>
+          <div class="layer layers__base" style="background-image: url(./img/first-background.png);"></div>
+          <div class="layer layers__middle" style="background-image: url(./img/second-layer.png);"></div>
+          <div class="layer layers__front" style="background-image: url(./img/first-layer.png);"></div>
+        </div>
+      </header>
+      <article class="main-article" style="background-image: url(./img/second-background.png);">
+        <div class="main-article__content">
+          <p class="main-article__header">The whispers of ancient forests and stars lead you here...</p>
+          <p class="main-article__header">What do you wish to know from the sunsets of time?</p>
+          <div class="main-article__paragraph"> 
+            <div><input type="text" id="question" placeholder="Ask a question"></div>
+            <div><button id="getAnswer">Get Answer</button></div>
+            <p id="answer"></p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <script src="./libs/gsap/gsap.min.js" defer></script>
+  <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
+  <script src="./js/animate.js" defer></script>
+  <script src="./js/magicBall.js"></script>
+</body>
+</html>
